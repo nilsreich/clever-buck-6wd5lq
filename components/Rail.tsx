@@ -8,6 +8,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+import Link from "next/link";
+
 import {
   Tooltip,
   TooltipContent,
@@ -27,36 +29,37 @@ export const Rail = () => {
           alt="Supbase Logo"
         />
       </div>
-
-      <div className="p-2 m-2">
-        <TooltipProvider delayDuration={0}>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <LayoutDashboard size={16} strokeWidth={1} />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Dashboard</p>
-              <ToolTipArrow className="text-neutral-100/50 fill-current" />
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-      </div>
-      <div className="rounded-sm bg-[#1e1e1e]/10 p-2 dark:bg-neutral-100/10 m-2">
-        <TooltipProvider delayDuration={0}>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <LayoutDashboard size={16} strokeWidth={1} />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Dashboard</p>
-              <ToolTipArrow className="text-neutral-100/50 fill-current" />
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-        <Boxes size={16} strokeWidth={1} />
-      </div>
-      <div className="p-2 m-2">
-        <TooltipProvider delayDuration={0}>
+      <Link href=' ' className="m-2">
+        <div className="p-2 rounded-sm focus:bg-[#1e1e1e]/5 hover:bg-[#1e1e1e]/5">
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <LayoutDashboard size={16} strokeWidth={1} />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Dashboard</p>
+                <ToolTipArrow className="text-neutral-100/50 fill-current" />
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </div>
+      </Link>
+      <Link href=' ' className="m-2">
+        <div className="rounded-sm bg-[#1e1e1e]/10 p-2 dark:bg-neutral-100/10">
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Boxes size={16} strokeWidth={1} />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Dashboard</p>
+                <ToolTipArrow className="text-neutral-100/50 fill-current" />
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </div>
+      </Link>      <Link href=' ' className="m-2">
+        <div className="p-2 rounded-sm focus:bg-[#1e1e1e]/5 hover:bg-[#1e1e1e]/5">        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger asChild>
               <Table2 size={16} strokeWidth={1} />
@@ -67,9 +70,9 @@ export const Rail = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-      </div>
-      <div className="p-2 m-2">
-        <TooltipProvider delayDuration={0}>
+        </div>
+      </Link>      <Link href=' ' className="m-2">
+        <div className="p-2 rounded-sm focus:bg-[#1e1e1e]/5 hover:bg-[#1e1e1e]/5">        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger asChild>
               <MessagesSquare size={16} strokeWidth={1} />
@@ -80,9 +83,9 @@ export const Rail = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-      </div>
-      <div className="p-2 m-2">
-        <TooltipProvider delayDuration={0}>
+        </div>
+      </Link>      <Link href=' ' className="m-2">
+        <div className="p-2 rounded-sm focus:bg-[#1e1e1e]/5 hover:bg-[#1e1e1e]/5">        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger asChild>
               <Archive size={16} strokeWidth={1} />
@@ -93,13 +96,13 @@ export const Rail = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-      </div>
-      <div className="grow"></div>
-      <div className="p-2 m-2">
-        <TooltipProvider delayDuration={0}>
+        </div>
+      </Link>      <div className="grow"></div>
+      <Link href=' ' className="m-2">
+        <div className="p-2 rounded-sm focus:bg-[#1e1e1e]/5 hover:bg-[#1e1e1e]/5">        <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Settings size={16} strokeWidth={1} />{" "}
+              <Settings size={16} strokeWidth={1} />
             </TooltipTrigger>
             <TooltipContent>
               <p>Settings</p>
@@ -107,7 +110,7 @@ export const Rail = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-      </div>
-    </div>
+        </div>
+      </Link>    </div>
   );
 };
