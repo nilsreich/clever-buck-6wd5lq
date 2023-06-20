@@ -115,6 +115,8 @@ export const Toolbar = () => {
           </Tooltip>
         </TooltipProvider>
       </button>
+      <div className="grow"></div>
+      <button className="bg-black text-xs font-semibold rounded px-4 text-neutral-200">edit</button>
     </div>
   );
 };

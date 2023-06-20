@@ -3,7 +3,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const Editor = () => {
   return (
-    <ScrollArea className="grow">
+    <ScrollArea className="grow overflow-hidden">
       <div className="grow">
         <div className="border-b border-[#1e1e1e]/5 px-6 py-3 text-sm dark:border-neutral-100/5">
           Sessions / BGY22a / Extremwertaufgaben
