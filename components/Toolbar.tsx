@@ -4,6 +4,8 @@ import {
   AlignRight,
   Bold,
   Italic,
+  PanelLeftClose,
+  PanelRightClose,
   Underline,
 } from "lucide-react";
 import {
@@ -22,11 +24,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Button } from "./ui/button";
 export const Toolbar = () => {
   return (
-    <div className="sticky top-0 bg-neutral-100 border-b border-[#1e1e1e]/5 px-6 py-2 text-sm dark:border-neutral-100/5 flex">
-       <Select defaultValue="BGY22a">
-        <SelectTrigger className="bg-transparent border-none w-[100px]" >
+    <div className="sticky top-0   bg-neutral-100 border-b border-[#1e1e1e]/5 px-6 text-sm dark:border-neutral-100/5 flex">
+      <div className="border-r h-11 pt-0.5 -ml-5  border-[#1e1e1e]/5 ">
+        <Button variant="ghost" className="">
+          <PanelLeftClose size={14} strokeWidth={1} />
+        </Button>
+      </div>
+
+      <Select defaultValue="BGY22a">
+        <SelectTrigger className="bg-transparent border-none w-[100px]">
           <SelectValue placeholder="Select a class" />
         </SelectTrigger>
         <SelectContent>
@@ -116,7 +125,15 @@ export const Toolbar = () => {
         </TooltipProvider>
       </button>
       <div className="grow"></div>
-      <button className="bg-black text-xs font-semibold rounded px-4 text-neutral-200">edit</button>
+      <button className="m-2 bg-black text-xs font-semibold rounded px-4 text-neutral-200">
+        edit
+      </button>
+      <div className="border-l h-11 pt-0.5 -mr-5  border-[#1e1e1e]/5 ">
+        <Button variant="ghost" className="">
+          <PanelRightClose size={14} strokeWidth={1} />
+        </Button>
+      </div>
+
     </div>
   );
 };

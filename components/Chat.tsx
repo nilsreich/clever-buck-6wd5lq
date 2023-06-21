@@ -4,10 +4,13 @@ import { Input } from "./ui/input";
 export const Chat = () => {
   return (
     <div className="flex w-64 flex-col border-l border-[#1e1e1e]/5 dark:border-neutral-100/5">
+       <div className="flex items-center gap-2 border-b border-[#1e1e1e]/5 pl-6 py-2 text-lg dark:border-neutral-100/5">
+        <div>Chat</div>
+      </div>
       <div className="grow overflow-scroll">
-      <div className="p-1 px-4 text-sm border-b">
+      <div className="p-1 px-4 text-sm border-b border-[#1e1e1e]/5 ">
           <div className="flex items-center gap-2">
-            <UserCircle size={16} strokeWidth={1} />{" "}
+            <UserCircle size={16} strokeWidth={1} />
             <div className="font-medium">Nils Reich</div>
           </div>
           <div className="pt-2">
@@ -15,9 +18,9 @@ export const Chat = () => {
             Schnittpunkten aussehen kann
           </div>
         </div>
-        <div className="p-1 px-4 text-sm border-b">
+        <div className="p-1 px-4 text-sm">
           <div className="flex items-center gap-2">
-            <Bot size={16} strokeWidth={1} />{" "}
+            <Bot size={16} strokeWidth={1} />
             <div className="font-medium">AI</div>
           </div>
           <div className="pt-2 leading-6">
